@@ -20,11 +20,11 @@
 
 ## User flow
 
-  1.	Users can upload a PDF paper and read it within the GUI. They can select specific content and query K2-Think for explanations.
-	2.	The GUI can iteratively ask K2-Think to generate a mind-map of the paper’s reasoning structure, which users can then edit manually.
-	3.	The GUI supports screenshot-based OCR for mathematical formulas. The recognized content is converted to LaTeX, reviewed and typed by the user, and stored in a math content list.
-	4.	Users may also upload their own math content, such as handwritten derivations recognized via OCR, or directly input LaTeX code.
-	5.	From the math content list, users can select one or more items and ask K2-Think specific questions—for example, “What role does Assumption 1 play in deriving Equation 1?” or “Check whether Derivation 1 contains a logical error.”
+ 	1. Users can upload a PDF paper and read it within the GUI. They can select specific content and query K2-Think for explanations. 
+	2. The GUI can iteratively ask K2-Think to generate a mind-map of the paper’s reasoning structure, which users can then edit manually.
+	3. The GUI supports screenshot-based OCR for mathematical formulas. The recognized content is converted to LaTeX, reviewed and typed by the user, and stored in a math content list.
+	4. Users may also upload their own math content, such as handwritten derivations recognized via OCR, or directly input LaTeX code.
+	5. From the math content list, users can select one or more items and ask K2-Think specific questions—for example, “What role does Assumption 1 play in deriving Equation 1?” or “Check whether Derivation 1 contains a logical error.”
 
   1. 用户可以上传某论文的pdf文件，在GUI里阅读。用户可以选择内容[^3.5]，询问K2-Think。
   2. GUI可以迭代地询问 K2-Think，从而生成论文的思维导图[^7]。用户可以根据自己的理解，对该思维导图进行编辑。
