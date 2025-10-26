@@ -27,15 +27,14 @@ A K2-Think–powered assistant for reading math-intensive papers, helping resear
  5. From the list, users can select items and ask K2-Think questions—for example, “What role does Assumption 1 play in deriving Equation 1?” or “Check whether Derivation 1 contains an error.”
   
 ## Platform / tech stack
-- Overall GUI: PyMuPDF, tkinter
-- Screenshot OCR: OpenCV, Pillow (PIL), pytesseract
-- Mind-map visualization: GraphML
-- OCR for printed/handwritten math formulas: MathPix Convert API
+
+PyMuPDF, tkinter, OpenCV, PIL, pytesseract, GraphML, MathPix Convert API
 
     
 ## Additional Notes
 
-To ensure reasoning reliability, K2-Think must explicitly list all assumptions before any derivation. This lets users verify premises in advance and prevents logically inconsistent or misleading conclusions.
+K2-Think is required to list assumptions before derivation so users can verify logic and prevent errors.
+
 
 
 ---
