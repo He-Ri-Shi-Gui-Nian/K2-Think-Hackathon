@@ -16,27 +16,27 @@
 # Section 2: What You’ll Build ≤ 200 words
 ## Core offering
 
-  A K2-Think–powered assistant for reading math-intensive papers, helping researchers understand key derivations and logical dependencies.
+A K2-Think–powered assistant for reading math-intensive papers, helping researchers understand key derivations and logical dependencies.
 
 ## User flow
 
-  1. Users can upload a PDF paper and read it within the GUI. They can select specific content and query K2-Think for explanations. 
-  2. The GUI can iteratively ask K2-Think to generate a mind-map of the paper’s reasoning structure, which users can then edit manually.
-  3. The GUI supports screenshot-based OCR for mathematical formulas. The recognized formulas are converted into LaTeX code, which users can review, modify, and label by type (including but not limited to assumptions, equations, formulas, theorems, lemmas, derivations, and proofs). The processed items are then stored in the Math Content List.
-  4. Users may also upload their own math content, such as handwritten derivations recognized via OCR, or directly input LaTeX code.
-  5. From the math content list, users can select one or more items and ask K2-Think specific questions—for example, “What role does Assumption 1 play in deriving Equation 1?” or “Check whether Derivation 1 contains a logical error.”
+ 1. Users can upload a PDF and read it in the GUI, selecting content to query K2-Think for explanations.
+ 2. The GUI can iteratively ask K2-Think to generate a mind map of the paper’s reasoning structure, which users can edit.
+ 3. It supports screenshot-based OCR for formulas. Recognized formulas are converted into LaTeX code, which users can review, modify, and label by type (assumptions, equations, theorems, lemmas, derivations, proofs). Processed items are stored in the Math Content List.
+ 4. Users may also upload their own math content, such as handwritten derivations recognized via OCR or direct LaTeX input.
+ 5. From the list, users can select items and ask K2-Think questions—for example, “What role does Assumption 1 play in deriving Equation 1?” or “Check whether Derivation 1 contains an error.”
   
 ## Platform / tech stack
 - Overall GUI: PyMuPDF, tkinter
 - Screenshot OCR: OpenCV, Pillow (PIL), pytesseract
-- Mind-map visualization: GraphML, tkinter
+- Mind-map visualization: GraphML
 - OCR for printed/handwritten math formulas: MathPix Convert API
 
     
 ## Additional Notes
 
-To ensure reliability of reasoning, K2-Think will be required to explicitly list all assumptions before performing any derivation.
-This allows users to verify premises in advance and prevents logically inconsistent or misleading conclusions.
+To ensure reasoning reliability, K2-Think must explicitly list all assumptions before any derivation. This lets users verify premises in advance and prevents logically inconsistent or misleading conclusions.
+
 
 ---
 
