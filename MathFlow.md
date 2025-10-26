@@ -1,18 +1,3 @@
-# 备选的名字
-- MathReader
-- MathAid
-- MathLens
-- PaperMath
-- MathScope
-- Deriva
-- Hypo
-- LaTexMind
-- MathFlow
-- K2Math
-
-
-
-
 # Section 1: Problem & User
 ## Target users
   
