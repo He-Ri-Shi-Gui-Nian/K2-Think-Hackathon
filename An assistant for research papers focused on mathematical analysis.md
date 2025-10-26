@@ -30,42 +30,32 @@
 - Overall GUI: PyMuPDF, tkinter
 - Screenshot OCR: OpenCV, Pillow (PIL), pytesseract
 - Mind-map visualization: GraphML, tkinter
-- OCR for printed/handwritten math formulas: MathPix API
+- OCR for printed/handwritten math formulas: MathPix Convert API
 
     
-## Anything else you want to highlight
+## Additional Notes
 
-  - 确保推理结果的可靠性
-   由于 AI 在推导过程中有时可能生成误导性或逻辑不一致的结论，系统将要求 **K2-Think 在进行任何推理前，必须先明确列出所有前提假设**。
-   这样用户可以在推理前核查假设条件，从而有效避免错误结论的产生。
+To ensure reliability of reasoning, K2-Think will be required to explicitly list all assumptions before performing any derivation.
+This allows users to verify premises in advance and prevents logically inconsistent or misleading conclusions.
 
 ---
 
 # Section 3: Why K2 Think ≤ 60 words
 ## Which specific capability of K2 Think are you leveraging?
 
-  1. 论文阅读是一个连贯的智力过程，如果AI大模型的反应时间太长，将会破坏这种连贯性，造成理解困难。K2-Think的token速度能避免这类问题。
-  2. 数学密集型的论文，其理解难点主要在于数学推理。K2-Think的高级数学推理能力，与该任务完美匹配。
+	1.	Academic reading is a continuous cognitive process; long model latency disrupts comprehension. K2-Think’s fast token streaming maintains this flow.
+	2.	The main difficulty in math-intensive papers lies in logical reasoning. K2-Think’s advanced mathematical inference capability is perfectly suited for this task.
      
 ---
 
 # Section 4: Demo ≤ 50 words
-## MVP[^mvp] you can realistically deliver in 48 hours
-
-  [^mvp]: Minimum Viable Product
-
-  1. A lightweight Python GUI
-  2. Users can upload and view a PDF paper
-  3. Users can screenshot a **mathematical content**, and get OCRed LaTex code (editable) which can then be added to the **math content list**.
-  4. Users can choose from the **math content list** and get K2-think's response to their questions.
-
-  一个轻量级的 Python 图形界面，用户可以上传并阅读 PDF，截取数学内容截图识别为可编辑的 LaTeX，保存到数学内容列表中，或直接上传自己的推导过程的LaTex代码，并选择其中的内容向 K2-Think 提问以获取推理解释。
+## MVP you can realistically deliver in 48 hours
   
   A lightweight Python GUI where users upload and read PDFs, capture math content as screenshots for editable LaTeX, save it to a math content list or upload their own LaTeX derivations, and query K2-Think for reasoning explanations based on selected items.
 
 ---
 
 # Section 5: Support Needed (Optional · ≤ 30 words)
--	Credits, mentorship, dataset, etc.
 
-  MathPix API
+1. Access to the MathPix Convert API
+2. Guidance on the effective use of the K2-Think API.
