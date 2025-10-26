@@ -20,30 +20,17 @@
 
 ## User flow
 
- 	1. Users can upload a PDF paper and read it within the GUI. They can select specific content and query K2-Think for explanations. 
-	2. The GUI can iteratively ask K2-Think to generate a mind-map of the paper’s reasoning structure, which users can then edit manually.
-	3. The GUI supports screenshot-based OCR for mathematical formulas. The recognized content is converted to LaTeX, reviewed and typed by the user, and stored in a math content list.
-	4. Users may also upload their own math content, such as handwritten derivations recognized via OCR, or directly input LaTeX code.
-	5. From the math content list, users can select one or more items and ask K2-Think specific questions—for example, “What role does Assumption 1 play in deriving Equation 1?” or “Check whether Derivation 1 contains a logical error.”
-
-  1. 用户可以上传某论文的pdf文件，在GUI里阅读。用户可以选择内容[^3.5]，询问K2-Think。
-  2. GUI可以迭代地询问 K2-Think，从而生成论文的思维导图[^7]。用户可以根据自己的理解，对该思维导图进行编辑。
-  3. GUI支持截图OCR识别数学公式。数学公式识别为 LaTex 代码[^4]，经过用户修订并标记类型[^3]后，进入**数学内容**存储列表。
-  4. 用户还可以上传自己的**数学内容**。例如，GUI支持对手写推导过程的OCR识别[^6]，用户可以修订识别出的 LaTex 代码，也可以直接上传 LaTex 代码。
-  5. 用户可以从**数学内容**存储列表中勾选一个或多个**数学内容**，让 K2-Think 回答自己的问题。例如，“**假设1**在**公式1**的推导中起到了什么作用？”，“检查**推导1**是否存在缺陷。”
-
-  [^3]: 类型包括但不限于假设、方程、公式、定理、引理、推导、证明
-  [^3.5]: PyMuPDF + tkinter 即可实现（据ChatGPT）
-  [^4]: MathPix API（据ChatGPT）
-  [^6]: MathPix API（据ChatGPT）
-  [^7]: graphML + tkinter 可以实现（据ChatGPT）
+  1. Users can upload a PDF paper and read it within the GUI. They can select specific content and query K2-Think for explanations. 
+  2. The GUI can iteratively ask K2-Think to generate a mind-map of the paper’s reasoning structure, which users can then edit manually.
+  3. The GUI supports screenshot-based OCR for mathematical formulas. The recognized formulas are converted into LaTeX code, which users can review, modify, and label by type (including but not limited to assumptions, equations, formulas, theorems, lemmas, derivations, and proofs). The processed items are then stored in the Math Content List.
+  4. Users may also upload their own math content, such as handwritten derivations recognized via OCR, or directly input LaTeX code.
+  5. From the math content list, users can select one or more items and ask K2-Think specific questions—for example, “What role does Assumption 1 play in deriving Equation 1?” or “Check whether Derivation 1 contains a logical error.”
   
 ## Platform / tech stack
-  - 总体GUI -> PyMuPDF，tkinter
-  - 截图询问 -> OpenCV，Pillow（PIL），pytesseract
-  - 思维导图 -> GraphML，tkinter
-  - OCR识别pdf数学公式 -> MathPix API（每月免费100次，付费4.99$每月）
-  - OCR识别手写数学公式 -> MathPix API
+- Overall GUI: PyMuPDF, tkinter
+- Screenshot OCR: OpenCV, Pillow (PIL), pytesseract
+- Mind-map visualization: GraphML, tkinter
+- OCR for printed/handwritten math formulas: MathPix API
 
     
 ## Anything else you want to highlight
