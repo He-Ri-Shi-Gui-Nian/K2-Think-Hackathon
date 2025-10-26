@@ -43,8 +43,8 @@ This allows users to verify premises in advance and prevents logically inconsist
 # Section 3: Why K2 Think ≤ 60 words
 ## Which specific capability of K2 Think are you leveraging?
 
-	1.	Academic reading is a continuous cognitive process; long model latency disrupts comprehension. K2-Think’s fast token streaming maintains this flow.
-	2.	The main difficulty in math-intensive papers lies in logical reasoning. K2-Think’s advanced mathematical inference capability is perfectly suited for this task.
+- Academic reading is a continuous cognitive process; long model latency disrupts comprehension. K2-Think’s fast token streaming maintains this flow.
+- The main difficulty in math-intensive papers lies in logical reasoning. K2-Think’s advanced mathematical inference capability is perfectly suited for this task.
      
 ---
 
@@ -57,5 +57,5 @@ This allows users to verify premises in advance and prevents logically inconsist
 
 # Section 5: Support Needed (Optional · ≤ 30 words)
 
-1. Access to the MathPix Convert API
-2. Guidance on the effective use of the K2-Think API.
+- Access to the MathPix Convert API
+- Guidance on the effective use of the K2-Think API.
