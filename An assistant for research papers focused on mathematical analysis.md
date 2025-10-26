@@ -1,4 +1,4 @@
-# Section 1: Problem & User ≤ 200 words
+# Section 1: Problem & User
 ## Target users
   
   Undergraduate students, graduate students, PhD candidates, and researchers.
@@ -13,7 +13,7 @@
 
 ---
 
-# Section 2: What You’ll Build ≤ 200 words
+# Section 2: What You’ll Build
 ## Core offering
 
 A K2-Think–powered assistant for reading math-intensive papers, helping researchers understand key derivations and logical dependencies.
@@ -40,22 +40,20 @@ To ensure reasoning reliability, K2-Think must explicitly list all assumptions b
 
 ---
 
-# Section 3: Why K2 Think ≤ 60 words
-## Which specific capability of K2 Think are you leveraging?
+# Section 3: Why K2 Think
 
 - Academic reading is a continuous cognitive process; long model latency disrupts comprehension. K2-Think’s fast token streaming maintains this flow.
 - The main difficulty in math-intensive papers lies in logical reasoning. K2-Think’s advanced mathematical inference capability is perfectly suited for this task.
      
 ---
 
-# Section 4: Demo ≤ 50 words
-## MVP you can realistically deliver in 48 hours
+# Section 4: Demo
   
   A lightweight Python GUI where users upload and read PDFs, capture math content as screenshots for editable LaTeX, save it to a math content list or upload their own LaTeX derivations, and query K2-Think for reasoning explanations based on selected items.
 
 ---
 
-# Section 5: Support Needed (Optional · ≤ 30 words)
+# Section 5: Support Needed 
 
 - Access to the MathPix Convert API
 - Guidance on the effective use of the K2-Think API.
